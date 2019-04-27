@@ -1,6 +1,10 @@
 ---
-title: "Ananke: a Hugo Theme"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
-description: "The last theme you'll ever need. Maybe."
+title: "Thomas M. Porter II"
+featured_image: '/images/front-banner.jpg'
+description: "adventures in coding and possibly wisdom"
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+This is a page about me. 
+
+You may not know me or you may not like me. 
+
+However, you are here now, so make the most of it.
