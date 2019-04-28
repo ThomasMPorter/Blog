@@ -19,3 +19,9 @@ steps:
     source: 'src'
     destination: '$(Build.ArtifactStagingDirectory)'
     baseURL: 'http://thomasmporter.github.io'
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish Hugo site as artifact'
+  inputs:
+    artifactName: 'hugo-site'
+    targetPath: '$(Build.ArtifactStagingDirectory)'
