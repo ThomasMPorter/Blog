@@ -11,7 +11,7 @@ steps:
 - task: HugoTask@1
   inputs:
     source: 'src'
-    destination: '$(Build.ArtifactStagingDirectory)'
+    destination: '$(Build.ArtifactStagingDirectory)\build'
     baseURL: 'http://thomasmporter.github.io/'
 
 - task: PublishPipelineArtifact@0
