@@ -22,10 +22,10 @@ steps:
 
 - task: GitHubPagesPublish@1
   inputs:
-    docPath: '$(Build.ArtifactStagingDirectory)\a\'
+    docPath: '$(Build.ArtifactStagingDirectory)'
     githubusername: 'ThomasMPorter'
     githubemail: 'thomasmporterii@gmail.com'
     githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
     repositoryname: 'ThomasMPorter.github.io'
     branchname: 'master'
-    commitmessage: 'Automated Release $(Release.ReleaseId)'
+    commitmessage: 'Automated Release'
