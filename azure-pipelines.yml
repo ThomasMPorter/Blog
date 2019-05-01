@@ -14,15 +14,9 @@ steps:
     destination: '$(Build.ArtifactStagingDirectory)\build'
     baseURL: 'http://thomasmporter.github.io/'
 
-- task: PublishPipelineArtifact@0
-  displayName: 'Publish Hugo site as artifact'
-  inputs:
-    artifactName: 'hugo-site'
-    targetPath: '$(Build.ArtifactStagingDirectory)'
-
 - task: GitHubPagesPublish@1
   inputs:
-    docPath: '$(Build.ArtifactStagingDirectory)'
+    docPath: '$(Build.ArtifactStagingDirectory)\build'
     githubusername: 'ThomasMPorter'
     githubemail: 'thomasmporterii@gmail.com'
     githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
