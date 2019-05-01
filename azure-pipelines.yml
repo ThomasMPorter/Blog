@@ -18,7 +18,7 @@ steps:
   inputs:
     source: 'src'
     destination: '$(Build.ArtifactStagingDirectory)'
-    baseURL: 'http://thomasmporter.github.io'
+    baseURL: 'http://thomasmporter.github.io/'
 
 - task: GitHubPagesPublish@1
   inputs:
