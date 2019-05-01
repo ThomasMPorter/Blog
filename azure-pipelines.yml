@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - master
 
@@ -11,8 +6,7 @@ pool:
 
 steps:
 - checkout: self
-  displayName: 'Checkout repository including submodules'
-  submodules: true  # true so Hugo theme submodule is checked out
+  submodules: true
 
 - task: HugoTask@1
   inputs:
