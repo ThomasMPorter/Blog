@@ -1,13 +1,4 @@
 # Starter pipeline
-- task: GitHubPagesPublish@1
-  inputs:
-    docPath: '$(System.DefaultWorkingDirectory)\src\public'
-    githubusername: 'ThomasMPorter'
-    githubemail: 'thomasmporterii@gmail.com'
-    githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
-    repositoryname: 'ThomasMPorter.github.io'
-    branchname: 'master'
-    commitmessage: 'Automated Release $(Release.ReleaseId)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -34,3 +25,13 @@ steps:
   inputs:
     artifactName: 'hugo-site'
     targetPath: '$(Build.ArtifactStagingDirectory)'
+
+- task: GitHubPagesPublish@1
+  inputs:
+    docPath: '$(Build.ArtifactStagingDirectory)'
+    githubusername: 'ThomasMPorter'
+    githubemail: 'thomasmporterii@gmail.com'
+    githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
+    repositoryname: 'ThomasMPorter.github.io'
+    branchname: 'master'
+    commitmessage: 'Automated Release $(Release.ReleaseId)'
