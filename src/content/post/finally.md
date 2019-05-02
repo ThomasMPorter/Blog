@@ -1,7 +1,6 @@
 ---
 title: "Finally"
 date: 2019-05-01T18:26:52-07:00
-draft: true
 ---
 
 It took a hot minute, but I finally got an Azure Pipeline to deploy my hugo source to GitHub Pages.

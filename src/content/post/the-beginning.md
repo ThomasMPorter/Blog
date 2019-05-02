@@ -1,7 +1,6 @@
 ---
 title: "The Beginning"
 date: 2016-08-13T18:36:04-07:00
-draft: true
 ---
 
 So, I’ve been a Microsoft .NET programmer for over ten years.
