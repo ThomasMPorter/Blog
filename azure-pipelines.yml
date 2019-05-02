@@ -11,12 +11,12 @@ steps:
 - task: HugoTask@1
   inputs:
     source: 'src'
-    destination: '$(Build.ArtifactStagingDirectory)'
+    destination: ''
     baseURL: 'http://thomasmporter.github.io/'
 
 - task: GitHubPagesPublish@1
   inputs:
-    docPath: '..\a'
+    docPath: ''
     githubusername: 'ThomasMPorter'
     githubemail: 'thomasmporterii@gmail.com'
     githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
