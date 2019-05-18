@@ -1,3 +1,6 @@
+variables:
+- group: GitHubAccess
+
 trigger:
 - master
 
