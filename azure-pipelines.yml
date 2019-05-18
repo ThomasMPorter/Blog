@@ -19,7 +19,7 @@ steps:
     docPath: '$(System.DefaultWorkingDirectory)\docs\*'
     githubusername: 'ThomasMPorter'
     githubemail: 'thomasmporterii@gmail.com'
-    githubaccesstoken: '828f6b6b7bcb9ef96c7eed150aeed98810341db9'
+    githubaccesstoken: $(gitHubToken)
     repositoryname: 'ThomasMPorter.github.io'
     branchname: 'master'
     commitmessage: 'Automated Release'
