@@ -9,6 +9,7 @@ pool:
 
 steps:
 - checkout: self
+  clean: true
   submodules: true
 
 - task: HugoTask@1
