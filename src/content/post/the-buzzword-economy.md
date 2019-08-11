@@ -8,3 +8,4 @@ A video about Buzzwords by yours truly!
 
 {{< youtube JSvJmMfO92k >}}
 
+{{< tweet 1156042284648943616 >}}

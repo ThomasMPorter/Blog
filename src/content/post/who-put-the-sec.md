@@ -8,3 +8,4 @@ A video about DevSecOps by yours truly!
 
 {{< youtube WvV-0i5o0cY >}}
 
+{{< tweet 1157999976649150465 >}}
