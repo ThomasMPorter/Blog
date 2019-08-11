@@ -9,9 +9,14 @@ pool:
 
 steps:
 - checkout: self
-  clean: true
-  submodules: true
+  persistCredentials: true
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      git submodule sync
+
+      
 - task: HugoTask@1
   inputs:
     source: 'src'
