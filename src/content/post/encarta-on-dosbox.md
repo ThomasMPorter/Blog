@@ -61,7 +61,7 @@ I found a [great guide from 2014](https://dsync.blogspot.com/2014/03/a-complete-
     cputype=pentium_slow
     ```
 
-    As noted in the original guide (and test by me), not setting this make Windows 95 go crazy graphically (the cursor becomes a black box, for instance).
+    As noted in the original guide (and tested by me), not setting this makes Windows 95 go crazy graphically (the cursor becomes a black box, for instance).
 
 1. Don't forget to save!
 
