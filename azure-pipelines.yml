@@ -9,12 +9,7 @@ pool:
 
 steps:
 - checkout: self
-  persistCredentials: true
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      git submodule update
+  submodules: true
 
 - task: HugoTask@1
   inputs:
