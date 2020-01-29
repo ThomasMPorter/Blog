@@ -19,7 +19,7 @@ jobs:
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
-        repo: 'ThomasMPorter.github.io'
+        repo: 'ThomasMPorter/ThomasMPorter.github.io'
         target_branch: 'master'
         build_dir: 'docs'
 env:
