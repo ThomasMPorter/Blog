@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Render and Publish Blog
 
 on: [push]
 
