@@ -22,3 +22,5 @@ jobs:
         repo: 'ThomasMPorter.github.io'
         target_branch: 'master'
         build_dir: 'docs'
+env:
+  GITHUB_TOKEN: ${{ secrets.BlogToken }}
