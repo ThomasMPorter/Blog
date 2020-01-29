@@ -1,0 +1,22 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Powerful Hugo
+      uses: klakegg/actions-hugo@1.0.0
+      with:
+        source: 'src'
+        target: '$(System.DefaultWorkingDirectory)\docs\'
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v1.2.5
+      with:
+        repo: 'ThomasMPorter.github.io'
+        target_branch: 'master'
+        build_dir: '$(System.DefaultWorkingDirectory)\docs\*'
