@@ -9,10 +9,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@2.0.0
     - name: Powerful Hugo
       uses: klakegg/actions-hugo@1.0.0
       with:
-        source: '$(System.DefaultWorkingDirectory)\src\'
+        source: 'src'
         target: '$(System.DefaultWorkingDirectory)\docs\'
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
