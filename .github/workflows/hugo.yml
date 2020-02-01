@@ -25,4 +25,3 @@ jobs:
         build_dir: 'docs'
 env:
   GITHUB_TOKEN: ${{ secrets.BlogToken }}
-  HUGO_ENV: production
