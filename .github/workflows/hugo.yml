@@ -16,6 +16,7 @@ jobs:
       with:
         source: 'src'
         target: 'docs'
+        env: production  
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
